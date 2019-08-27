@@ -1,19 +1,51 @@
 {
-  "name": "curso-platzi-react-avanzado",
-  "version": "1.0.0",
-  "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danvasem/react-avanzado.git"
-  },
-  "author": "danvasem",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danvasem/react-avanzado/issues"
-  },
-  "homepage": "https://github.com/danvasem/react-avanzado#readme"
+    "name": "curso-platzi-react-avanzado",
+    "version": "1.0.0",
+    "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "dev": "webpack-dev-server --history-api-fallback",
+        "serve:dev": "webpack --mode 'development' && npx serve dist -s",
+        "test": "cypress open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danvasem/react-avanzado.git"
+    },
+    "author": "danvasem",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/danvasem/react-avanzado/issues"
+    },
+    "homepage": "https://github.com/danvasem/react-avanzado#readme",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-transform-runtime": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/runtime": "^7.5.5",
+        "babel-loader": "^8.0.6",
+        "cypress": "^3.4.1",
+        "html-webpack-plugin": "^3.2.0",
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.7",
+        "webpack-dev-server": "^3.8.0",
+        "webpack-pwa-manifest": "^4.0.0",
+        "wepack-cli": "0.0.1-security",
+        "workbox-webpack-plugin": "^4.3.1"
+    },
+    "dependencies": {
+        "@reach/router": "^1.2.1",
+        "apollo-boost": "^0.4.4",
+        "graphql": "^14.5.3",
+        "intersection-observer": "^0.7.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.9.0",
+        "react-apollo": "^3.0.1",
+        "react-dom": "^16.9.0",
+        "react-helmet": "^5.2.1",
+        "react-icons": "^3.7.0",
+        "styled-components": "^4.3.2"
+    }
 }
